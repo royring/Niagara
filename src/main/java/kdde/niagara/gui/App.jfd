@@ -1,0 +1,146 @@
+JFDML JFormDesigner: "5.2.0.0.109" Java: "1.8.0_92" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq t {par l {comp panel2:::::x, comp panel3:::::x}, space :::p, comp panel1:::p::p}, comp scrollPane1::l::951:x}, space :::p}, seq t {space ::42:x, comp button4:::p:901:p, space :p:36:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par l {comp panel1:::p::p, seq {comp panel2:::p:53:p, space :::p, comp panel3:::p::p}}, space :p:18:p, comp button4:::p::p, space :::p, comp scrollPane1::::462:x, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "Niagara"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq l {comp button1:::p::p, space :::p, comp textField1:::::x}, seq l {comp button2:::p::p, space :::p, comp textField2:::p:350:p, space :0:0:x}}, space :::p}}"
+				"$verticalGroup": "par l {seq l {par b {comp button1::b:p::p, comp textField1::b:p::p}, space :::x, par b {comp button2::b:p::p, comp textField2::b:p::p}}}"
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "数据集选择" )
+				auxiliary() {
+					"JavaCodeGenerator.variableName": "filePanel"
+				}
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "数据集1"
+					"margin": &Insets0 new java.awt.Insets( 2, 2, 2, 2 )
+					auxiliary() {
+						"JavaCodeGenerator.variableName": "fileButton1"
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "数据集2"
+					"margin": #Insets0
+					auxiliary() {
+						"JavaCodeGenerator.variableName": "fileButton2"
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+					"editable": false
+					auxiliary() {
+						"JavaCodeGenerator.variableName": "fileTextField1"
+					}
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+					"editable": false
+					auxiliary() {
+						"JavaCodeGenerator.variableName": "fileTextField2"
+					}
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp button3:::p::p, space :::p, comp textField3::::397:x, space :::p}}"
+				"$verticalGroup": "par l {seq t {space :0:0:x, par b {comp button3::b:p::p, comp textField3::b:p::p}}}"
+			} ) {
+				name: "panel2"
+				"border": new javax.swing.border.TitledBorder( "算法" )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "选择"
+					"margin": new java.awt.Insets( 2, 2, 2, 2 )
+					auxiliary() {
+						"JavaCodeGenerator.variableName": "choosebutton"
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "chooseActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField3"
+					"editable": false
+					auxiliary() {
+						"JavaCodeGenerator.variableName": "algorithmTextField"
+					}
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp label1:::p:52:p, space :::p, comp textField4:::p:70:p, space s:::p, comp label2:::p:52:p, space :::p, comp textField5:::p:70:p, space :0:210:x}}"
+				"$verticalGroup": "par l {par b:t {comp label1::b:::x, comp label2::b:p:36:p, comp textField5::b:p::p, comp textField4::b:p::p}}"
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "alpha"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "betal"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField4"
+					auxiliary() {
+						"JavaCodeGenerator.variableName": "alphaTextField"
+					}
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField5"
+					auxiliary() {
+						"JavaCodeGenerator.variableName": "betalTextField"
+					}
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "运行"
+				auxiliary() {
+					"JavaCodeGenerator.variableName": "runButton"
+				}
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "runbuttonActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textPane1"
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				"preferredSize": new java.awt.Dimension( 20, 18 )
+				"opaque": false
+				"autoscrolls": true
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "文件"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "保存"
+						"preferredSize": new java.awt.Dimension( 50, 24 )
+						"alignmentX": 0.0f
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "编辑"
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "视图"
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 995, 690 )
+		} )
+	}
+}
